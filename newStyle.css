@@ -1,0 +1,294 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  line-height: 2;
+}
+
+/* Header styles */
+header {
+  background-color: #303633;
+  color: #E7EDEF;
+  padding: 10px 0;
+  position: fixed; 
+  top:0;
+  width:100%;
+  
+  
+}
+
+.title-Bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.nameSection {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nameSection img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Navigation styles */
+.header-links {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+}
+
+.list-items {
+  margin-right: 30px;
+}
+
+.Header-item {
+  text-decoration: none;
+  color: #E7EDEF;
+  font-weight: bold;
+  
+}
+.list-items a:hover{
+  font-size:1.1em;
+  transition: transform .5s ease;
+}
+/* Hero section styles */
+.Home-hero {
+  background-color: #E7EDEF;
+  padding: 40px 0;
+  text-align: center;
+  height: 79vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading-Primary {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #303633;
+}
+.Home-info {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #303633;
+}
+
+.title-info {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #303633;
+}
+
+.projects-button {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #8D6887;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #434c47;
+}
+
+/* About section styles */
+.About-Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  height: 80vh;
+  scroll-margin-top: 100px;
+}
+
+.About-me-Container {
+  flex: 2;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.about1,
+.about2,
+.about3,
+.about4 {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #303633;
+  font-size: 1rem;
+}
+.Resume-button{
+    margin-top: 20px;
+}
+
+/* Skills section styles */
+.Skills-conatiner {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.skills-title {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #8D6887;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/*Styling projects container*/
+.project-view{
+  background-color: #F3F6F7;
+  text-align: center;
+}
+.projects-title{
+  margin-top: 20px;
+  padding-top: 60px;
+
+}
+.Projects-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling each project as a small tile */
+.project {
+  width: 400px; 
+  height: 300px; 
+  border: 1px solid #303633;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 60px; 
+  transition: transform 0.3s ease-in-out;
+  background-color: #8D6887;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 70%;
+  border-bottom: 1px solid #303633;
+  
+}
+
+.project-details {
+  width:100%;
+  height :30%;
+  text-align: center;
+  background-color: #8D6887;
+  color: #E7EDEF;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.project-description {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*Styling Contact Container*/
+.Contact-Container {
+  background-color: #E7EDEF;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.contact-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #303633;
+}
+
+.contact-info strong {
+  color: #333;
+}
+
+.contact-info a {
+  color: #8D6887;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title-Bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nameSection {
+    margin-bottom: 10px;
+  }
+
+  .Main-menu-container {
+    margin-top: 10px;
+  }
+
+  .About-Container {
+    flex-direction: column;
+  }
+}
